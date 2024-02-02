@@ -43,6 +43,7 @@ app.post('/note/update', async (req, res) => {
     {
       $set: {
         noteStatus: req.body.noteStatus,
+        notetext: req.body.notetext,
       },
     }
   )
