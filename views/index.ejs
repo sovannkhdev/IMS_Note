@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMS Note</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Icons -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="/css/style.css">
+      </head>
+<body>
+    <div class="ims_navbar">
+        <div class="container">
+            <h4>IMS Note</h4>
+            <div class="right_navbar">
+                <a href="/">Home</a>
+                <a href="/completed/note">Completed Note</a>
+                <a id="add_btn" onclick="showAddNoteForm()">Add Note Form</a>
+                <a href="https://line.me/ti/p/JM-DtmpGhy" target="_blank">Help</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h5 class="section_title">App</h5>
+        <div class="link_icons">
+            <a href="http://10.123.10.65/WebNavigator/Redirect.aspx?id=198" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV86Q6w9ztoIKLA3U1WeeZCoGY4pRaz3efHnCYsSkaO9R-eMlSln0t26wCa7x_72B3Z1cLz49MH1AUFaoRrcLn7gdkvSNTEUXTe0VXEifGUvBrlR_rUya3SaOdRa1v086r7EHmXuSW1s3iozHkFFqueCw=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                People Connect
+            </a>
+            <a href="http://10.123.10.65/WebNavigator/Redirect.aspx?id=76" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV850HSLmSHxc51Gk9REtoqRrK5bkFhPyP1TLwBoj2Yhm9o2HUQ1cC02M9RNMcZkn06a1u-AKUkorRKxLgP-ojUnCUHTAb1WnjqpLHnpHPvO1_x9pThoG5bRASIVJtN_vQbvSGCmBImnEilccIt9tpIRa=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                ยานพาหนะ
+            </a>
+            <a href="https://arcusair.bdms.co.th/#!/authentication/login" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV853FnbX4kDYVGfbeYCL00GgMvQFd5GRUHXYHG9tN8RGppvJFkDtxHANS89JjVaEojY8m_uHxGb2Yd_KfpLHoUhxZa7_eXhmLlfLK6EVsISmnzUgWkbiWdSPrlachz0x5zIkmISVGTZlhYazhRO7D0S3=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                Arcus Air
+            </a>
+            <a href="https://www.chanthaburihospital.com/doctor/alldoctor.php" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV879xdFxP9azRFGbOawNu0Ubrlk87cTNASJCpU8h_J1thDiB_rbpMM_BqNQT-U7kGpLuKE3Vb1qZTpLSa2DLVcLyEgy6rUCkwbRd25qVZ289_bVET-SX_ru0PNt9rTe_sVNayumOnSqsacLpHJOA0nMk=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                ตารางเวรแพทย์
+            </a>
+            <a href="https://app.powerbi.com/groups/me/list?noSignUpCheck=1&cmpid=pbi-glob-head-snn-signin" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV87H_YhGii5FpC8Q0XwEYrECfmSX9poNbFZsCfICd3hU7qfF8QCjaTKiux8xcYGlpp_U3Qqfa8JWajlHwdgA1_Uclda3QdppzgaS0yuRuKsnlx1Co6mTa3Oonlvuf7HDEZudu9zwE0rjg0_acCNsdcdq=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                Power BI
+            </a>
+            <a href="http://10.123.10.25/docview/main.aspx?hn=" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV848u4U2Yx0-ySuT4FdLWD9UTubhSm-rWCCJ9QLIdO_EV6xiIl7QF6sw_fl3KtcTkMTeHxY27KbtS-CZ0rF3X4KR61qxI7rhKRyL3Mqn9148tMAgtrdfzpPLQI0e3wZW0iiI-_twviclARzYsGMwLJUE=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                Document View
+            </a>
+            <a href="http://bmc.bdms.co.th/tpp/_layouts/TPP/Forms/TPPMX014.aspx" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV848u7B5JaaOrlSenvNDk6sjtGQtszhbOVPBM39a8pEer9MzPZ6rUSlaSLIOgFoDOzjrdyv24iEzhD_1Bp6VATUpMrct8-Iy1Nd67ZNjxQgOvdMa05zjSmhirbfBkK9Sgvh8wdzXuQYc8eDaXfEFnhOO=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                Third Party
+            </a>
+            <a href="https://outlook.office.com/mail/" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV84sUHUgLb_Vyh7_Hg709Y_koF0imDtTbC28SQkwDjgoa3vYoy_VJ35qTij1iB1xRzUBYMMdXypTHVOcbLhbRuDC-3UqNC8TlTs4A9yXLb0lGodfHoBLh9M2QuUrkUEgDf5PyZG04L7-25zbfPkkUniC=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                Inter Mail
+            </a>
+            <a href="http://10.121.10.172:5002/?site=BCH" class="icon_container" target="_blank">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV85Lii-Z8npzBdnADUenGVgCkfqESBPNJJ8CgyUDQ8cV5NILD7LT95e4baFSKMaN1J6GwFD6u35XNBsKim5WsPi5LQUODSeEENV6fEUTJhyExhaVgRuQDi4QYJD9VHDbo7IpcS75vwQMbNI4uB5SfWH_=w520-h520-s-no-gm?authuser=0" alt="Icons">
+                iFind
+            </a>
+        </div>
+        <h5 class="section_title">Pending Note</h5>
+        <hr>
+        <div class="all_pending_note">
+            <div class="add_note_form_hide" id="add_note_form">
+                <form action="/add/note" method="POST">
+                    <div class="mb-3">
+                        <input type="hidden" name="noteStatus" id="noteStatus" value="Pending">
+
+                        <label for="staffName" class="form-label">Interpreter Name</label>
+                        <select class="form-select" name="staffName" id="staffName" aria-label="Default select example" required>
+                            <option selected>Choose</option>
+                            <option value="Sokchim">Sokchim</option>
+                            <option value="Chantha">Chantha</option>
+                            <option value="Tak">Tak</option>
+                            <option value="Kookkai">Kookkai</option>
+                            <option value="กฤษณา">กฤษณา</option>
+                            <option value="Kanjana">Kanjana</option>
+                            <option value="Ter">Ter</option>
+                            <option value="Sovann">Sovann</option>
+                            <option value="Sompong">Sompong</option>
+                            <option value="Nut">Nut</option>
+                            <option value="Earth">Earth</option>
+                            <option value="Sasi">Sasi</option>
+                            <option value="Ice">Ice</option>
+                        </select>
+
+                        <label for="notetext" class="form-label">Note Description</label>
+                        <textarea class="form-control" id="notetext" name="notetext" required rows="3"></textarea>
+                    </div>
+                    <div class="submit_btn d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Add Note</button>
+                    </div>
+                </form>
+                <hr>
+            </div>
+            <% if (locals.noteposts.length > 0) { %>
+            <div class="pending_note">
+                <% for(let i=0; i<noteposts.length; i++) { %>
+                    <div class="card border-secondary" style="max-width: 20rem;">
+                        <div class="card-header">
+                            <%= noteposts[i].noteDate.toDateString() %>
+                            <div>
+                                <a href="/note/edit/<%= noteposts[i]._id %>" onclick="return confirm('Would you like to update this note?')"><span class="material-symbols-outlined"><span class="material-symbols-outlined">update</span></a>
+                                <a href="/note/delete/<%= noteposts[i]._id %>" onclick="return confirm('Would you like to delete this note?')"><span class="material-symbols-outlined">delete</span></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title"><%= noteposts[i].staffName %></h4>
+                        <p class="card-text"><%= noteposts[i].notetext %></p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+            <% } else {%>
+                <p class="alert alert-warning">You do not have any pending notes</p>
+            <% } %>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
